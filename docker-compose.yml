@@ -2,8 +2,8 @@ version: '3.2'
 services:
   bash:
     image: learncli/bash
-    working_dir: /mnt/workdir
+    working_dir: /mnt/learncli/workdir
     volumes:
       - type: bind
-        source: "${WORKDIR:-./workdir}"
-        target: /mnt/workdir
+        source: "${WORKDIR:-./}"
+        target: /mnt/learncli
