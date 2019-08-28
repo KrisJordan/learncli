@@ -7,3 +7,10 @@ services:
       - type: bind
         source: "${WORKDIR:-./}"
         target: /mnt/learncli
+  comp290:
+    image: learncli/comp290:latest
+    working_dir: /mnt/learncli/workdir
+    volumes:
+      - type: bind
+        source: "${WORKDIR:-./}"
+        target: /mnt/learncli
